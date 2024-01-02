@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HousingLocationComponent } from './housing-location/housing-location.component';
 import { DetailsComponent } from './details/details.component';
+import { HousingService } from './housing.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { DetailsComponent } from './details/details.component';
     DetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
-  providers: [],
+  providers: [HousingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
